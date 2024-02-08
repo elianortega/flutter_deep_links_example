@@ -1,4 +1,4 @@
-package com.example.flutterDeepLinksExample
+package dev.elianortega.sandbox
 
 import io.flutter.embedding.android.FlutterActivity
 
