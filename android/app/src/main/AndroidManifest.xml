@@ -1,7 +1,9 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.elianortega.sandbox">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="flutter_deep_links_example"
         android:name="${applicationName}"
+        android:label="Elian Sandbox"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -22,6 +24,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <!-- Native deep links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+              
+                <data android:scheme="https" android:host="mobile.elianortega.dev" />
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
