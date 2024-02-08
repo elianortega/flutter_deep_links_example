@@ -1,4 +1,4 @@
-package com.example.flutter_branch_deep_links
+package com.example.flutterDeepLinksExample
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,3 +1,3 @@
-# flutter_branch_deep_links
+# flutter_deep_links_example
 
 A new Flutter project.
