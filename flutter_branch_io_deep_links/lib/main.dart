@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
 import 'package:go_router/go_router.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FlutterBranchSdk.init(
+    useTestKey: true,
+    enableLogging: true,
+  );
+  FlutterBranchSdk.validateSDKIntegration();
   runApp(const App());
 }
 
