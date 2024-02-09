@@ -4,7 +4,10 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:mobile.elianortega.dev</string>
+		<string>applinks:edz8b.test-app.link</string>
+		<string>applinks:edz8b-alternate.test-app.link</string>
+		<string>applinks:edz8b.app.link</string>
+		<string>applinks:edz8b-alternate.app.link</string>
 	</array>
 </dict>
 </plist>

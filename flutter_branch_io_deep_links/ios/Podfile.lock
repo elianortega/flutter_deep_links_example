@@ -1,0 +1,29 @@
+PODS:
+  - BranchSDK (3.0.1)
+  - Flutter (1.0.0)
+  - flutter_branch_sdk (7.0.4):
+    - BranchSDK (~> 3.0.0)
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_branch_sdk (from `.symlinks/plugins/flutter_branch_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - BranchSDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_branch_sdk:
+    :path: ".symlinks/plugins/flutter_branch_sdk/ios"
+
+SPEC CHECKSUMS:
+  BranchSDK: e268bcf41469051c9e83efcd6fd85d0ba91d1d0f
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_branch_sdk: a7d5ba2bb9839d8c7ed6d51e14857962a846b8f7
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.14.3

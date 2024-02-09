@@ -46,7 +46,35 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<!-- Native Deep Links -->
-	<key>FlutterDeepLinkingEnabled</key>
-	<true/>
+	<!-- <key>FlutterDeepLinkingEnabled</key>
+	<true/> -->
+	<!-- BRANCH IO -->
+	<key>branch_universal_link_domains</key>
+	<array>
+		<string>edz8b.app.link</string>
+		<string>edz8b-alternate.app.link</string>
+		<string>edz8b.test-app.link</string>
+		<string>edz8b-alternate.test-app.link</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>dev.elianortega.sandbox</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>dev.elianortega.sandbox</string>
+		</dict>
+	</array>
+	<key>branch_key</key>
+	<dict>
+		<key>live</key>
+		<string>key_live_lEdyWwgU3E8aXbPKxRoCVghoEzmLnB94</string>
+		<key>test</key>
+		<string>key_test_mtcF4EhTZtXfWhOLxLgFAkpcEDkKcr7N</string>
+	</dict>
 </dict>
 </plist>
