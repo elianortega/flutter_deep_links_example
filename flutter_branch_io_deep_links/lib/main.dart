@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
+import 'package:flutter_deep_links_example/branch_listener.dart';
 import 'package:go_router/go_router.dart';
 
 void main() async {
@@ -8,21 +9,28 @@ void main() async {
     useTestKey: true,
     enableLogging: true,
   );
-  FlutterBranchSdk.validateSDKIntegration();
+  // FlutterBranchSdk.validateSDKIntegration();
   runApp(const App());
 }
 
 final router = GoRouter(
   routes: [
-    GoRoute(
-      path: '/',
-      builder: (context, state) => const MainScreen(),
+    ShellRoute(
+      builder: (context, state, child) {
+        return BranchListener(child: child);
+      },
       routes: [
         GoRoute(
-          path: 'details/:itemId',
-          builder: (context, state) => DetailsScreen(
-            id: state.pathParameters['itemId']!,
-          ),
+          path: '/',
+          builder: (context, state) => const MainScreen(),
+          routes: [
+            GoRoute(
+              path: 'details/:itemId',
+              builder: (context, state) => DetailsScreen(
+                id: state.pathParameters['itemId']!,
+              ),
+            ),
+          ],
         ),
       ],
     ),
